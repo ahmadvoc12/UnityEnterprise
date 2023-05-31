@@ -27,24 +27,24 @@
                         <x-admin::sortable value="ID" name="id" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Nama" name="name" />
+                        <x-admin::sortable value="Name" name="name" />
                     </x-admin::row-header>
                     <x-admin::row-header>
                         <x-admin::sortable value="Slug" name="slug" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Kebutuhan Dana" name="funds" />
+                        <x-admin::sortable value="Capital Funds" name="funds" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Dana Terkumpul" name="collected_funds" />
+                        <x-admin::sortable value="Capital Funding" name="collected_funds" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Waktu Terbit" name="published_at" />
+                        <x-admin::sortable value="published_at" name="published_at" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Waktu Ditutup" name="closed_at" />
+                        <x-admin::sortable value="closed_at" name="closed_at" />
                     </x-admin::row-header>
-                    <x-admin::row-header>Aksi</x-admin::row-header>
+                    <x-admin::row-header>Action</x-admin::row-header>
                 </x-admin::col-header>
             </thead>
             <x-admin::tbody>

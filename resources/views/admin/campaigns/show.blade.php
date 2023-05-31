@@ -6,7 +6,7 @@
 
     <x-admin::card>
         <div class="mb-4">
-            <x-admin::label value="Nama" />
+            <x-admin::label value="MSME Name" />
             <p class="text-sm">{{ $campaign->name }}</p>
         </div>
         <div class="mb-4">
@@ -18,15 +18,15 @@
             <img src="{!! $campaign->original_cover_url !!}" class="w-full" />
         </div>
         <div class="mb-4">
-            <x-admin::label value="Deskripsi" />
+            <x-admin::label value="Business Description" />
             <p class="text-sm">{!! $campaign->description !!}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Kebutuhan Dana" />
+            <x-admin::label value="Capital Needs" />
             <p class="text-sm">@if($campaign->isUnlimitedFunds()) @idr($campaign->funds) @else Tidak terbatas @endif</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Dana Terkumpul" />
+            <x-admin::label value="Capital Funding" />
             <p class="text-sm">@idr($campaign->collected_funds ?? 0)</p>
         </div>
         <div class="mb-4">

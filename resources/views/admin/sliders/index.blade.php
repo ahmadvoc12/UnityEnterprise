@@ -18,12 +18,12 @@
             <thead>
                 <x-admin::col-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Urutan" name="sort" />
+                        <x-admin::sortable value="Sort" name="sort" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Nama" name="name" />
+                        <x-admin::sortable value="Name" name="name" />
                     </x-admin::row-header>
-                    <x-admin::row-header>Aksi</x-admin::row-header>
+                    <x-admin::row-header>Action</x-admin::row-header>
                 </x-admin::col-header>
             </thead>
             <x-admin::tbody>

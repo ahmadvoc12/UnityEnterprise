@@ -17,25 +17,25 @@
                         <x-admin::sortable value="ID" name="id" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Tanggal Diterima" name="received_at" />
+                        <x-admin::sortable value="Received At" name="received_at" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Nomor Rekening" name="account_number" />
+                        <x-admin::sortable value="Account Number" name="account_number" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Atas Nama" name="account_holder_name" />
+                        <x-admin::sortable value="Account holder name" name="account_holder_name" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Deskripsi" name="description" />
+                        <x-admin::sortable value="Description" name="description" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Tipe" name="type" />
+                        <x-admin::sortable value="Type" name="type" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Nominal" name="amount" />
+                        <x-admin::sortable value="Amount" name="amount" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Saldo Terakhir" name="balance" />
+                        <x-admin::sortable value="Balance" name="balance" />
                     </x-admin::row-header>
                 </x-admin::col-header>
             </thead>

@@ -19,7 +19,7 @@
                     <p class="mt-4">
                         <span class="text-primary font-semibold">@idr($campaign->collected_funds)</span>
                         @if ($campaign->funds)
-                            <span class="text-sm font-light">terkumpul dari @idr($campaign->funds)</span>
+                            <span class="text-sm font-light">Funding From @idr($campaign->funds)</span>
                         @endif
                     </p>
                     <div class="h-2 bg-gray-200 rounded my-2 overflow-hidden">
@@ -28,15 +28,15 @@
                     <div class="flex justify-between items-center">
                         <p>
                             <span class="font-semibold">{{ $campaign->donors }}</span>
-                            <span class="text-sm font-light">Donatur</span>
+                            <span class="text-sm font-light">Hero</span>
                         </p>
                         @if ($campaign->canClose() && !$campaign->isClosed())
                             <p>
                                 @if ($campaign->time_left > 0)
                                     <span class="font-semibold">{{ $campaign->time_left }}</span>
-                                    <span class="text-sm font-light">Hari lagi</span>
+                                    <span class="text-sm font-light">Day's Remaining</span>
                                 @else
-                                    <span class="font-semibold">Hari terakhir</span>
+                                    <span class="font-semibold">Last Day</span>
                                 @endif
                             </p>
                         @endif
@@ -44,7 +44,7 @@
                     <a
                         href="{{ !$campaign->isClosed() ? route('campaigns.transactions.create', ['slug' => $campaign->slug]) : '#' }}"
                         class="block py-2 px-3 rounded bg-primary text-white text-center font-semibold mt-4 {{ $campaign->isClosed() ? 'opacity-50' : null }}"
-                    >Donasi sekarang</a>
+                    >Donate Now!</a>
                 </x-bg-main>
             </div>
 
@@ -63,7 +63,7 @@
             <div class="mb-2"></div>
 
             <x-bg-main class="p-4">
-                <h3 class="text-lg font-semibold">Donatur ({{ $campaign->donors }})</h3>
+                <h3 class="text-lg font-semibold">Hero ({{ $campaign->donors }})</h3>
 
                 <div class="mt-4">
                     @foreach ($transactions as $transaction)
@@ -91,7 +91,7 @@
                     <a
                         href="{{ !$campaign->isClosed() ? route('campaigns.transactions.create', ['slug' => $campaign->slug]) : '#' }}"
                         class="block py-2 px-3 rounded bg-primary text-white text-center font-semibold mt-4 {{ $campaign->isClosed() ? 'opacity-50' : null }}"
-                    >Donasi sekarang</a>
+                    >Donate Now!</a>
                 </div>
             </x-container>
         </x-bg-main>

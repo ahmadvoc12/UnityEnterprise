@@ -1,7 +1,7 @@
 <x-admin::app>
     <div class="flex items-center space-x-2">
         <x-admin::back :href="route('admin::sliders.index')" />
-        <x-admin::page-title value="Ubah Slider" />
+        <x-admin::page-title value="Edit Slider" />
     </div>
 
     <x-admin::form-container>

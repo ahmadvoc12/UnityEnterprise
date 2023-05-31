@@ -1,5 +1,5 @@
 <x-admin::app>
-    <x-admin::page-title value="Transaksi" />
+    <x-admin::page-title value="Transaction" />
 
     <x-admin::success-alert />
 
@@ -27,24 +27,24 @@
                         <x-admin::sortable value="ID" name="id" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Kode" name="code" />
+                        <x-admin::sortable value="Code" name="code" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Program" name="campaign_name" />
+                        <x-admin::sortable value="campaign_name" name="campaign_name" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Nama" name="user_name" />
+                        <x-admin::sortable value="MSME Name" name="user_name" />
                     </x-admin::row-header>
                     <x-admin::row-header>
                         <x-admin::sortable value="Total" name="total" />
                     </x-admin::row-header>
                     <x-admin::row-header>
-                        <x-admin::sortable value="Waktu Dibuat" name="created_at" />
+                        <x-admin::sortable value="created_at" name="created_at" />
                     </x-admin::row-header>
                     <x-admin::row-header>
                         <x-admin::sortable value="Status" name="status" />
                     </x-admin::row-header>
-                    <x-admin::row-header>Aksi</x-admin::row-header>
+                    <x-admin::row-header>Action</x-admin::row-header>
                 </x-admin::col-header>
             </thead>
             <x-admin::tbody>

@@ -1,7 +1,7 @@
 <x-admin::app>
     <div class="flex items-center space-x-2">
         <x-admin::back :href="route('admin::users.index')" />
-        <x-admin::page-title value="Ubah Pengguna" />
+        <x-admin::page-title value="Edit User" />
     </div>
 
     <x-admin::form-container>

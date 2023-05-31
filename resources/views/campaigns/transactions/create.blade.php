@@ -27,7 +27,7 @@
                 @csrf
                 <input type="hidden" name="meta" x-model="meta">
                 <x-bg-main class="p-4">
-                    <h3 class="text-center mb-4">Masukan nominal donasi</h3>
+                    <h3 class="text-center mb-4">Enter Amount Donation</h3>
                     <div class="grid grid-cols-3 gap-2 mb-4">
                         @foreach ($amounts as $amount)
                             <button
@@ -41,7 +41,7 @@
                         @endforeach
                     </div>
                     <div class="p-4 mb-4 rounded border border-gray-200">
-                        <p class="text-sm mb-2">Nominal lain</p>
+                        <p class="text-sm mb-2">Another Amount</p>
                         <label class="block w-full relative">
                             <span class="absolute top-0 left-0 bottom-0 px-3 py-2 font-semibold">Rp</span>
                             <input
@@ -53,7 +53,7 @@
                         </label>
                     </div>
                     <div class="p-4 mb-4 rounded border border-gray-200 flex flex-col items-center">
-                        <p>Metode Pembayaran</p>
+                        <p>Payment Method</p>
                         <img
                             src="{{ $paymentMethod->icon }}"
                             alt="{{ $paymentMethod->name }}"
@@ -75,18 +75,18 @@
                         <p
                             x-show="showCopiedFeedback"
                             class="text-xs text-primary"
-                        >Tersalin</p>
+                        >Copied</p>
                     </div>
                     @if (!$user)
                         <div class="mb-4">
                             <p class="text-center">
-                                <a href="{{ route('login') }}" class="text-primary">Masuk</a>
-                                <span>atau isi form di bawah</span>
+                                <a href="{{ route('login') }}" class="text-primary">Login</a>
+                                <span>or fill this form</span>
                             </p>
                         </div>
                     @else
                         <div class="mb-4">
-                            <p class="text-center">Informasi Donatur</p>
+                            <p class="text-center">Hero Information</p>
                         </div>
                     @endif
                     <div class="mb-4">
@@ -112,7 +112,7 @@
                             type="text"
                             name="phone"
                             x-model="phone"
-                            placeholder="Nomor HP (opsional)"
+                            placeholder="Phone Number (Optional)"
                             class="w-full"
                         />
                     </div>
@@ -124,7 +124,7 @@
                                 value="1"
                                 class="text-primary focus:border-primary focus:outline-none focus:shadow-outline-primary dark:focus:shadow-outline-gray"
                             />
-                            <span class="ml-2">Sembunyikan nama saya</span>
+                            <span class="ml-2">Anonymous</span>
                         </label>
                     </div>
                     <div>
@@ -132,7 +132,7 @@
                             name="message"
                             x-model="message"
                             rows="4"
-                            placeholder="Pesan untuk program ini (opsional)"
+                            placeholder="the message for MSME"
                             class="w-full rounded-md shadow-sm border-gray-300 focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
                         ></textarea>
                     </div>
@@ -140,11 +140,10 @@
 
                 <div class="p-4">
                     <button
-                        type="submit"
-                        x-bind:disabled="!isCanBeSubmitted()"
-                        x-bind:class="isCanBeSubmitted() ? 'opacity-100' : 'opacity-50'"
+                    
+                
                         class="block w-full py-2 px-3 rounded bg-primary text-white text-center font-semibold focus:outline-none"
-                    >Lanjut pembayaran</button>
+                    >Continue for Payment</button>
                 </div>
             </form>
             <script>

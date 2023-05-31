@@ -6,7 +6,7 @@
 
     <x-admin::card>
         <div class="mb-4">
-            <x-admin::label value="Nama" />
+            <x-admin::label value="Name" />
             <p class="text-sm">{{ $user->name }}</p>
         </div>
         <div class="mb-4">
@@ -14,11 +14,11 @@
             <p class="text-sm">{{ $user->email }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Nomor HP" />
+            <x-admin::label value="Phone Number (Whatsapp)" />
             <p class="text-sm">{{ $user->phone }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Waktu Dibuat" />
+            <x-admin::label value="Create At" />
             <p class="text-sm">{{ $user->created_at }}</p>
         </div>
         <div class="flex items-center space-x-2">

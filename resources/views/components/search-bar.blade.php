@@ -3,12 +3,12 @@
         <x-container>
             <form action="{{ route('campaigns.index') }}" method="GET">
                 <div class="flex items-center space-x-2 p-2">
-                    <img onclick="location.href = 'https://insanpeduli.org'" src="/images/logo.png" alt="{{ Config::get('app.name') }}" class="h-12 cursor-pointer">
+                    <img onclick="location.href = 'https://siscpanak.xyz/'" src="/images/logo.png" alt="{{ Config::get('app.name') }}" class="h-12 cursor-pointer">
                     <label class="block w-full relative text-gray-300 focus-within:text-primary">
                         <input
                             type="search"
                             name="search"
-                            placeholder="Cari program"
+                            placeholder="Search MSME"
                             class="w-full rounded-full pl-4 pr-8 bg-gray-50 border-gray-300 focus:border-primary focus:ring-primary"
                         />
                         <svg class="absolute right-0 top-0 h-5 w-5 mt-3 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

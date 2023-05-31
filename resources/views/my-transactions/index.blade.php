@@ -4,7 +4,7 @@
             <x-container>
                 <div class="flex items-center space-x-2 p-2">
                     <x-button-back href="/" />
-                    <h3 class="line-clamp-1">Donasi Saya</h3>
+                    <h3 class="line-clamp-1">My Donation</h3>
                 </div>
             </x-container>
         </x-bg-main>
@@ -13,7 +13,7 @@
     <x-container>
         <main class="py-20">
             <x-bg-main class="p-4">
-                <div>Total Donasi</div>
+                <div>Total Donation</div>
                 <div class="text-2xl text-primary text-right font-semibold">@idr($paidTransactionTotal)</div>
             </x-bg-main>
 
@@ -58,7 +58,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <div>Data masih kosong</div>
+                        <div>Empty Data</div>
                     </div>
                 @endif
             </x-bg-main>

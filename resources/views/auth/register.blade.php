@@ -7,7 +7,7 @@
 
         <!-- Name -->
         <div>
-            <x-label for="name" value="Nama" />
+            <x-label for="name" value="Name" />
 
             <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
         </div>
@@ -20,29 +20,29 @@
         </div>
 
         <div class="mt-4">
-            <x-label for="phone" value="Nomor HP" />
+            <x-label for="phone" value="Phone Number (Whatsapp)" />
 
             <x-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
-            <x-label for="password" value="Kata Sandi" />
+            <x-label for="password" value="Password" />
 
             <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
         </div>
 
         <!-- Confirm Password -->
         <div class="mt-4">
-            <x-label for="password_confirmation" value="Konfirmasi Kata Sandi" />
+            <x-label for="password_confirmation" value="password confirmation" />
 
             <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required />
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">Sudah terdaftar?</a>
+            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">Already registered?</a>
 
-            <x-button type="submit" class="ml-4">Daftar</x-button>
+            <x-button type="submit" class="ml-4">Register</x-button>
         </div>
     </form>
 </x-app-guest>

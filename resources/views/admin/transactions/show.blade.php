@@ -6,7 +6,7 @@
 
     <x-admin::card>
         <div class="mb-4">
-            <x-admin::label value="Kode" />
+            <x-admin::label value="Code" />
             <p class="text-sm">{{ $transaction->code }}</p>
         </div>
         <div class="mb-4">
@@ -14,7 +14,7 @@
             <p class="text-sm">{{ $transaction->campaign->name }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Nama" />
+            <x-admin::label value="Name" />
             <p class="text-sm">{{ $transaction->user_name }}</p>
         </div>
         <div class="mb-4">
@@ -22,11 +22,11 @@
             <p class="text-sm">{{ $transaction->user_email }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Nomor HP" />
+            <x-admin::label value="Phone Number (Whatsapp)" />
             <p class="text-sm">{{ $transaction->user_phone ?? '-' }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Pesan" />
+            <x-admin::label value="Message for MSME" />
             <p class="text-sm">{{ $transaction->message ?? '-' }}</p>
         </div>
         <div class="mb-4">
@@ -34,7 +34,7 @@
             <p class="text-sm">@idr($transaction->amount)</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Kode Unik" />
+            <x-admin::label value="Unique Code" />
             <p class="text-sm">{{ $transaction->unique_code }}</p>
         </div>
         <div class="mb-4">
@@ -42,7 +42,7 @@
             <p class="text-sm">@idr($transaction->total)</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Waktu Dibuat" />
+            <x-admin::label value="created at" />
             <p class="text-sm">{{ $transaction->created_at }}</p>
         </div>
         <div class="mb-4">

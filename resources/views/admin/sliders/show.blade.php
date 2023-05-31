@@ -6,11 +6,11 @@
 
     <x-admin::card>
         <div class="mb-4">
-            <x-admin::label value="Nama" />
+            <x-admin::label value="MSME Name" />
             <p class="text-sm">{{ $slider->name }}</p>
         </div>
         <div class="mb-4">
-            <x-admin::label value="Waktu Dibuat" />
+            <x-admin::label value="Create At" />
             <p class="text-sm">{{ $slider->created_at }}</p>
         </div>
         <div class="mb-4">
